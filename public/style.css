@@ -1,0 +1,504 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+} 
+/* Navigation Styles */
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* Main Section Styles */
+#main{
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    background-color: #1f2a42;
+}
+/* Navigation Bar Styles */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 30px 0px;
+}
+
+.logo{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;   
+    color: #1f2a42;                                       
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu li a{
+    margin: 0px 30px;
+    color: white;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    transition: all ease 0.3s;
+}
+/* Social Media Links in Navigation */
+.nav-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-social a{
+    color: white;
+    margin-left: 20px;
+    transition: all ease 0.3s;
+}
+.nav-social a:first-child{
+    color: white;
+    margin-left: 0px;
+    transition: all ease 0.3s;
+}
+.menu li a:hover,
+.nav-social a:hover{
+    color: white;
+}
+/* Main Content Styles */
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 500px;
+    text-align: center;
+}
+.main-img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.main-content span{
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.main-content strong{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.main-content h1{
+    font-size: 3rem;
+    line-height: 3.4rem;
+    margin-top: 20px;
+}
+.main-content p{
+    color: aliceblue;
+    margin-top: 20px;
+    letter-spacing: 0.3px;
+}
+/* About Me Section Styles */
+#about-me{
+    max-width: 800px;
+    width: 90%;
+    margin: 50px auto;
+
+}
+#about-me strong{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #8d94b4;
+}
+#about-me h2{
+    font-size: 4rem;
+    line-height: 4.4rem;
+    color: #1f2a42;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.about-text{
+    margin-top: 30px;
+    max-width: 85%;
+    margin-left: auto;
+}
+.about-text h3{
+    font-size: 3rem;
+    line-height: 3.4rem;
+    color: #1f2a42;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.about-text p{
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    line-height: 1.4rem;
+    letter-spacing: 0.3px;
+}
+.about-text a{
+    width: 180px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    color: #1f2a42;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.about-text a i{
+    margin-left: 10px;
+}
+/* Projects Section Styles */
+#my-projects{
+    width: 100%;
+    margin: 50px auto 0px auto;
+    background-color: #1f2a42;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.projects-heading strong{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.projects-heading h2{
+    font-size: 2.2rem;
+    color: rgb(255, 255, 255);
+    max-width: 600px;
+    font-weight: 700;
+}
+.projects-box-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.projects-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 30px;
+    background-color: #1f2a42;
+    border-radius: 6px;
+}
+.projects-box i{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #51b4ff3b;
+}
+.projects-box strong{
+    color: rgb(19, 18, 18);
+    font-size: 1.4rem;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.projects-box p{
+    color: #000000;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.projects-box a{
+    height: 45px;
+    background-color: #51b4ff3b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 0px 20px;
+}
+.projects-box:hover{
+    border: 1px solid aliceblue;
+}
+
+.special-box-1 {
+    background-image: url('assets/horiseon.png');
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+}
+
+.special-box-2 {
+    background-image: url('assets/quizz.png');
+    background-size: cover;
+    width: 455px;
+    height: 275px;
+
+}
+
+.special-box-3 {
+    background-image: url('your-special-background-image.jpg');
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.special-box-4 {
+    background-image: url('your-special-background-image.jpg');
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+}
+
+.special-box-5 {
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+}
+
+.special-box-6 {
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    width: 300px;
+    height: 350px;
+}
+.projects-btn{
+    color: rgb(124, 175, 220);
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
+    padding: 0px 10px;
+}
+.projects-btn a{
+    color: rgb(124, 175, 220);
+    text-decoration: underline;
+    font-weight: 600;
+}
+/* Contact Section Styles */
+#contact{
+    width: 90%;
+    max-width: 950%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    text-align: center;
+}
+.contact strong{
+    color: #8d94b4;
+    font-size: 0.87rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.contact h3{
+    color: #1f2a42;
+    font-size: 2.37rem;
+    letter-spacing: 1px;
+}
+.contact p{
+    color: #252525;
+    font-weight: 500;
+    max-width: 550px;
+}
+.contact a{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8d94b43b;
+    color: #1f2a42;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.contact a i{
+    margin-left: 10px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 950px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #d8d8d8;
+}
+footer span{
+    color: #313131;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+footer .footer-logo{
+    color: #1f2a42;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+}
+.menu-icon,
+.menu-btn{
+    display: none;
+}
+/* Responsive Design */
+@media(max-width:1000px){
+    .menu-btn{
+        display: block;
+    }
+    .navigation{
+        justify-content: space-between;
+        padding: 20px;
+        position: relative;
+        width: 100%;
+        z-index: 103;
+    }
+    .navigation .menu{
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 100%;
+        background-color: #131313;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        box-shadow: 2px 30px 30px rgba(0,0,0,0.05);
+    }
+    .navigation .menu li{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .navigation .menu li a{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        padding: 20px;
+        border-bottom: 1px solid #161616;
+    }
+    .logo{
+        margin-left: 20px;
+        margin-right: auto;
+    }
+    .navigation .menu-icon{
+        cursor: pointer;
+        float: right;
+        padding: 10px 0px;
+        position: relative;
+        -webkit-user-select: none;
+        z-index: 106;
+    }
+    .navigation .menu-icon .nav-icon{
+        background-color: aliceblue;
+        display: block;
+        position: relative;
+        height: 2px;
+        width: 25px;
+        transition: background 0.2s ease-out;
+    }
+.navigation .menu-icon .nav-icon::before,
+.navigation .menu-icon .nav-icon::after{
+    background-color: #ffffff;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all ease-out 0.2s;
+}
+.navigation .menu-icon .nav-icon::before{
+    top: 9px;
+}
+.navigation .menu-icon .nav-icon::after{
+    top: -9px;
+}
+.navigation .menu-btn:checked ~ .menu-icon .nav-icon{
+    background-color: transparent;
+}
+.navigation .menu-btn:checked ~ .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+    top: 0px;
+}
+.navigation .menu-btn:checked ~ .menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+    top: 0px;
+}
+.navigation .menu-btn:checked ~ .menu{
+    display: block;
+}
+}
+@media (max-width: 850px){
+    .projects-box-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:724px){
+    .main-content h1{
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        max-width: 80%;
+        letter-spacing: 0.3px;
+    }
+    .main-content p{
+        max-width: 90%;
+    }
+    #about-me h2{
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+    .about-text h3{
+        font: 2rem;
+        line-height: 2.4rem;
+    }
+    .projects-heading h2{
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+    .contact h3{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .footer-logo{
+        font-size: 0.9rem !important;
+    }
+}
